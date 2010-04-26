@@ -60,6 +60,21 @@ Becomes this:
 
 Note the `Hi Bobs!`
 
+## Available Lexers
+
+This is currently only a demo, so we've hardcoded a small number of lexers:
+
+* ruby
+* js
+* python
+* scheme
+
+Use `{{# highlight_scheme}} code {{/ highlight_scheme}}`, for example,
+to activate one of the lexers.
+
+To get a complete list run `rake lexers` in the root of this project.
+
+
 ## Dependencies
 
 * Pygments
