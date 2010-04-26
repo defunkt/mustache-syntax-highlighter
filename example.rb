@@ -10,11 +10,17 @@ class Dude < Mustache
 end
 
 Dude.template = <<template
+<html><head>
+<link href="http://pygments.org/media/pygments_style.css" media="screen" rel="stylesheet" type="text/css" />
+</head><body><div class="syntax">
+
 {{# highlight_ruby}}
 def hello
   puts "Hi {{name}}!"
 end
 {{/ highlight_ruby}}
+
+</div></body></html>
 template
 
 puts Dude.render
