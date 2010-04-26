@@ -4,6 +4,8 @@ Mustache Syntax Highlighter
 A plugin for [mustache.rb][mr] that lets you syntax highlight blocks
 of code using sections.
 
+Essentially a demo of Mustache's "Higher Order Sections" functionality.
+
 For example, this template:
 
     I wrote some great code!
