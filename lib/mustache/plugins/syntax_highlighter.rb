@@ -7,7 +7,7 @@ class Mustache
 
       LEXERS.each do |lexer|
         define_method "highlight_#{lexer}" do
-          lambda { |text| Albino.new(text, lexer) }
+          lambda { |text| render Albino.new(text, lexer) }
         end
       end
     end
